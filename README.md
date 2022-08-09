@@ -14,5 +14,4 @@ serve -s ./out -p 8000
 
 ```
 
-
 This blogging site is built using [Next.js](https://nextjs.org/) and Markdown
