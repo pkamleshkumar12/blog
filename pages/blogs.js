@@ -1,41 +1,19 @@
-import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Post from "../components/Post";
 import { sortByDate } from "../utils";
-import Link from "next/link";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Home({ featuredPosts }) {
+export default function Blogs({ posts }) {
   return (
-    <div>
-      <Head>
-        <title>Kamlesh&apos;s Blog</title>
-      </Head>
-      <h4>featured Blogs</h4>
+    <>
+      <h4>All Blogs</h4>
       <div className="posts">
-        {featuredPosts.map((post, index) => (
+        {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
       </div>
-
-      {/* <h4>All Blogs</h4>
-
-      <div className="posts">
-        {nonFeaturedPosts.map((post, index) => (
-          <>
-            <Post key={index} post={post} />
-          </>
-        ))}
-      </div> */}
-
-      <div className="">
-        <Link href="blogs">
-          <a className="btn">Load More</a>
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
 
@@ -64,9 +42,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      featuredPosts: posts.sort(sortByDate).filter((e) => {
-        return e.frontmatter.featured == "yes";
-      }),
+      posts: posts.sort(sortByDate),
     },
   };
 }

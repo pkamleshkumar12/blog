@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -7,7 +10,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -32,15 +35,15 @@ header {
   margin-bottom: 40px;
 }
 
-header a {
-  color: #fff;
-}
+ 
 
-.container {
+.header-container {
   max-width: 768px;
   margin: auto;
   overflow: auto;
   padding: 0 10px;
+  display: flex;
+  justify-content:space-between;
 }
 
 .btn {
@@ -70,17 +73,31 @@ header a {
   margin-bottom: 20px;
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 30px;
+ 
 }
 
 .card {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card img {
+  object-fit: cover;
+  width: 350px;
+  height: 200px;
 }
 
 .card-page {
@@ -117,3 +134,18 @@ ol {
     grid-template-columns: 1fr;
   }
 }
+ 
+
+.header-container > h2{
+  margin-right: auto;
+  background-color: transparent;
+  padding: 1em;
+}
+
+.header-container  a{
+  padding: 1em ;
+  background-color:transparent;
+  margin-right: 5px;
+  color: #f4f4f4;
+}
+

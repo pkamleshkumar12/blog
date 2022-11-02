@@ -1,8 +1,8 @@
 ---
-title: 'Second Post'
-excerpt: 'This is Second post'
-cover_image: '/images/posts/image2.jpg'
-date: 'August 8, 2022'
+title: 'Forth Post'
+excerpt: 'This is Forth post'
+cover_image: '/images/posts/image4.jpg'
+date: 'August 19, 2022'
 featured: 'yes'
 ---
 

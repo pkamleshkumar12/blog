@@ -1,8 +1,8 @@
 ---
 title: 'Third Post'
-excerpt: 'This is Third post'
-cover_image: '/images/posts/image2.jpg'
-date: 'August 9, 2022'
+excerpt: 'This is 3rd post'
+cover_image: '/images/posts/image3.jpg'
+date: 'August 18, 2022'
 ---
 
 An h1 header
@@ -17,3 +17,13 @@ look like:
   * that one
   * the other one
 
+```ruby
+this = "Ruby Code"
+puts "This is #{this}"
+```
+
+```javascript
+export default Function getTemplate(){
+  return <h1> This is Template function </h1>;
+}
+```

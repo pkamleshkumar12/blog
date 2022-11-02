@@ -1,0 +1,1 @@
+export const post_per_page = 5;
